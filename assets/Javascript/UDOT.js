@@ -28,18 +28,21 @@ fetch(requestUrl)
 
 // Fuel API
 
-const fuelApiURL = "https://fuel-v2.cc.api.here.com/fuel/stations.xml"
-// ?prox=52.516667,13.383333,5000 idk what this is for yet
-const fuelApiKey= "TBasdBDvMftaCFwKonVHHM6_xUWoaMEGjmqHRvTIJtM";
+// Initialize Communication with Back-end Services
+const platform = new H.service.Platform({
+  apikey: 'TBasdBDvMftaCFwKonVHHM6_xUWoaMEGjmqHRvTIJtM'
+});
+ // Obtain the default map types from the platform
+var defaultLayers = platform.createDefaultLayers();
 
-function getFuelApi() {
-    var requestFuelUrl = "";
+// Initialize the Map
+const map = new H.Map(document.getElementById('map'), maptypes.vector.normal.map, {
+  center: {lat: 0, lng: 51},
+  zoom: 8
+});
 
-    fetch(requestFuelUrl)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data)
-        });
-}
+// Enable the event system on the map instance:
+var mapEvents = new H.mapevents.MapEvents(map);
+
+// Instantiate the default behavior, providing the mapEvents object:
+new H.mapevents.Behavior(mapEvents);
