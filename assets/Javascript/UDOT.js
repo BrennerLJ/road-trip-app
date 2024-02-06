@@ -2,13 +2,11 @@
 const apiKey = '5af94dd0937d48d3907b1f9fd170e21a';
 const apiUrl = 'https://www.udottraffic.utah.gov/api/v2/get/cameras';
 
-const requestUrl = '${https://www.udottraffic.utah.gov/api/v2/get/cameras}?apikey=${5af94dd0937d48d3907b1f9fd170e21a}';;
-
-fetch(requestUrl)
-  .then(response => response.json()) {
-    return response.json();
-  }
-  .then(data => data.json()) {
+const requestUrl = `${apiUrl}?key=${apiKey}`;
+const url = 'https://corsproxy.io/?' + encodeURIComponent(requestUrl);
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
     console.log(data);
 
     for (var i = 0; i < data.length; i++) {
@@ -24,4 +22,26 @@ fetch(requestUrl)
         createTableRow.appendChild(tableData);
         tableBody.appendChild(createTableRow);
   }
+});
+
+function displayUdot() {
+  document.getElementById("cameras").innerHTML = "Cameras: ${cameras}";
 }
+
+function getData() {
+  let cameras = document.getElementById("cameras");
+}
+
+fetch(url)
+  .then((response) => {
+    if (!response.ok) throw new Error("Error")
+    return response.json();
+  })
+  .then((dataArray) => {
+
+    cameras.innerHTML = dataArray
+    .map(({cameras}) => {
+      return `<div>${cameras}</div>`;
+    }).join("");
+  })
+  .catch(console.warn);
