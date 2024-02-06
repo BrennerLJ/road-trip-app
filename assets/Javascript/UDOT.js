@@ -1,3 +1,4 @@
+// UDOT API
 const apiKey = '5af94dd0937d48d3907b1f9fd170e21a';
 const apiUrl = 'https://www.udottraffic.utah.gov/api/v2/get/cameras';
 
@@ -8,41 +9,17 @@ fetch(url)
   .then(data => {
     console.log(data);
 
-    for (var i = 0; i < city.length; i++) {
-      var createTableRow = document.createElement("tr");
-      var tableData = document.createElement("td");
-      var link = document.createElement("a");
-      
-      link.textContent = data[i].html_url;
-      link.href = data[i].html_url;
+    for (var i = 0; i < data.length; i++) {
+        
+        var createTableRow = document.createElement('tr');
+        var tableData = document.createElement('td');
+        var link = document.createElement('a');
 
-      tableData.appendChild(link);
-      createTableRow.appendChild(tableData);
-      tableBody.appendChild(createTableRow);
-    }
-  });
-
-
-  function displayUdot() {
-    document.getElementById("cameras").innerHTML = "Cameras: ${cameras}";
+        link.textContent = data[i].html_url;
+        link.href = data[i].html_url;
+        
+        tableData.appendChild(link);
+        createTableRow.appendChild(tableData);
+        tableBody.appendChild(createTableRow);
   }
-
- function getData() {
-    let cameras = document.getElementById("cameras");
-  }
-
-
-
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) throw new Error("Error")
-      return response.json();
-    })
-    .then((dataArray) => {
-
-      cameras.innerHTML = dataArray
-      .map(({cameras}) => {
-        return `<div>${cameras}</div>`;
-      }).join("");
-    })
-    .catch(console.warn);
+}
