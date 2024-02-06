@@ -1,0 +1,16 @@
+.navbar-menu{
+    background-color: rgb(245, 134, 127);
+    padding: 20px;
+    
+}
+a.navbar-item{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+a.navbar-item:hover{
+    color: white;
+   transition: .03;
+   border-radius: 3px;
+   background-color: rgb(248, 108, 108);
+}
