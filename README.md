@@ -21,7 +21,7 @@ Simply open in any browser window.
 * Open the website in your browser.
 * View the "About" page by scrolling on the home page or clicking the "About" tab.
 * To see the road conditions, click on the "Traffic Conditions" tab.
-* You can click on the different cameras to see the traffic images.
+* You can click on the different cameras to see the traffic images
 * To see the gas prices, click on the "Gas Station Prices" tab.
 * You can search for the city you want and view the average gas price there.
 
@@ -32,15 +32,15 @@ If any issues arise, try reloading the website first. If the issue continues, fe
 ## Authors
 
 * Sara Sparrow
-    * [Email Sara Sparrow](<s.l.hubbard19@gmail.com>)
+    * <s.l.hubbard19@gmail.com>
 * Lorenzo Rios
-    * [Email Lorenzo Rios](<lorenzowebdevelopment6@gmail.com>)
+    * <lorenzowebdevelopment6@gmail.com>
 * Matthew Christopherson
-    * [Email Matthew Christopherson](<matthew.christopherson27@gmail.com>)
+    * <matthew.christopherson27@gmail.com>
 * Patrick Castorena
-    * [Email Patrick Castorena](<patrickc77hhs@gmail.com>)
+    * <patrickc77hhs@gmail.com>
 * Brenner Jolley
-    * [Email Brenner Jolley](<bjbrenardjoey@gmail.com>)
+    * <bjbrenardjoey@gmail.com>
 
 ## License
 
