@@ -21,7 +21,7 @@ Simply open in any browser window.
 * Open the website in your browser.
 * View the "About" page by scrolling on the home page or clicking the "About" tab.
 * To see the road conditions, click on the "Traffic Conditions" tab.
-* You can click on the different cameras to see the traffic images
+* You can click on the different cameras to see the traffic images.
 * To see the gas prices, click on the "Gas Station Prices" tab.
 * You can search for the city you want and view the average gas price there.
 
@@ -51,3 +51,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * [UDOT API](https://digitaldelivery.udot.utah.gov/datasets/udot-structures-open-data/api)
 * [Gas Price API](https://rapidapi.com/collectapi/api/gas-price)
 * [Images Source](https://unsplash.com/)
+
+![Screenshot of webpage](./assets/Screenshot%202024-02-07%20204327.png)
