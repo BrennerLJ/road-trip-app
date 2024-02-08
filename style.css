@@ -13,8 +13,26 @@ a.navbar-item:hover{
    transition: .03;
    border-radius: 3px;
    background-color: rgb(248, 108, 108);
+   font-size: 35px;
 }
 img{
     border-bottom: 3px solid black;
     border-top: 3px solid black;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+#about p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
 }
