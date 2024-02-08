@@ -23,18 +23,22 @@
           </div>
         </div>
       </nav>
-      <!-- The box below will show the gas prices of whatever city gets selected here. -Matt -->
-      <div class="select">
-        <select id="city-selector">
-          <option>Select city</option>
-        </select>
+      <!-- This is where the user will input their city and then click submit to find gas prices in that city. -Matt -->
+      <div class="text-input">
+        <input class="input" type="text" placeholder="Salt Lake City" id="city-input"/>
       </div>
+      <button class="button" onclick="fetchData();displayData();">Button</button>
       <!-- This is where I'm putting the displayed gas price for now. We can change this to whatever looks better. -Matt -->
       <div class="box" id="price-display">
-        
+        <p id="city-element">City: </p>
+        <p id="unleaded-price-element">Unleaded Gas Price: </p>
+        <p id="midgrade-price-element">Midgrade Gas Price: </p>
+        <p id="premium-price-element">Premium Gas Price: </p>
+        <p id="diesel-price-element">Diesel Price: </p>
       </div>
       </main>
       <script src="./assets/Javascript/Fuel.js"></script>
+      <script src="./assets/Javascript/script.js"></script>
   </body>
   
   </html>
