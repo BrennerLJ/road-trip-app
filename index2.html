@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Road Conditions Checker</title>
@@ -17,7 +18,7 @@
               Home
             </a>
             <a href="index3.html" class="navbar-item">
-              Gas Staion Prices
+              Gas Station Prices
             </a>
       
           <div class="navbar-end">
@@ -31,7 +32,7 @@
       <!--Message Box-->
       <div class="message">
         <div class="message-header">
-          <p>Welcome to our road trip API!</p>
+          <p>Welcome to our road trip APP!</p>
         </div>
         <div class="message-body">
           <p>Feel free to take a look at the cameras available to help plan your trip!</p>
@@ -41,12 +42,13 @@
   <section class="section">
     <div class="container">
       <h3 class="title has-text-centered is size-4">Live Camera Feeds</h3>
+      <h4 class="title is size-3">Salt Lake City</h4>
       <div class="columns mt-5 is-8 is-variable">
         <div class="column 4-tablet is-3-desktop">
           <div class="card">
-            <div class="car-image has-text-centered px-6">
+            <div class="car-image has-text-centered px-6" >
               <!--Will have to change to Video/ img is placeholder-->
-              <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+             <div id="cam2"></div>
             </div>
             <div class="card-content">
               <p>I-15</p>
@@ -93,7 +95,8 @@
       <!--Second Row of Feeds-->
       <section class="section">
         <div class="container">
-          <div class="columns mt-5 is-8 is-variable is-centered">
+          <h4 class="title is size-3">Ogden</h4>
+          <div class="columns mt-5 is-8 is-variable">
             <div class="column 4-tablet is-3-desktop">
               <div class="card">
                 <div class="car-image has-text-centered px-6">
@@ -102,7 +105,7 @@
                 </div>
                 <div class="card-content">
                   <p>I-15</p>
-                  <p class="title is-size-5">Salt Lake City</p>
+                  <p class="title is-size-5">Ogden</p>
                 </div>
               </div>
             </div>
@@ -114,11 +117,138 @@
                 </div>
                 <div class="card-content">
                   <p>I-15</p>
-                  <p class="title is-size-5">Salt Lake City</p>
+                  <p class="title is-size-5">Ogden</p>
                 </div>
+          </div>
+          </div>
+          <div class="column 4-tablet is-3-desktop">
+            <div class="card">
+              <div class="car-image has-text-centered px-6">
+                <!--Will have to change to Video/ img is placeholder-->
+                <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+              </div>
+              <div class="card-content">
+                <p>I-15</p>
+                <p class="title is-size-5">Ogden</p>
+              </div>
+        </div>
+        </div>
+        <div class="column 4-tablet is-3-desktop">
+          <div class="card">
+            <div class="car-image has-text-centered px-6">
+              <!--Will have to change to Video/ img is placeholder-->
+              <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+            </div>
+            <div class="card-content">
+              <p>I-15</p>
+              <p class="title is-size-5">Ogden</p>
+            </div>
+          </section>
+          <!--Ogden Canyon Cams-->
+          <section class="section">
+            <div class="container">
+              <h4 class="title is size-3">Ogden Canyon</h4>
+              <div class="columns mt-5 is-8 is-variable is-centered">
+                <div class="column 4-tablet is-3-desktop">
+                  <div class="card">
+                    <div class="car-image has-text-centered px-6">
+                      <!--Will have to change to Video/ img is placeholder-->
+                      <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                    </div>
+                    <div class="card-content">
+                      <p>I-15</p>
+                      <p class="title is-size-5">Ogden</p>
+                    </div>
+                  </div>
                 </div>
-
-      </section>
+                <div class="column 4-tablet is-3-desktop">
+                  <div class="card">
+                    <div class="car-image has-text-centered px-6">
+                      <!--Will have to change to Video/ img is placeholder-->
+                      <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                    </div>
+                    <div class="card-content">
+                      <p>I-15</p>
+                      <p class="title is-size-5">Ogden</p>
+                    </div>
+              </div>
+              </div>
+              <div class="column 4-tablet is-3-desktop">
+                <div class="card">
+                  <div class="car-image has-text-centered px-6">
+                    <!--Will have to change to Video/ img is placeholder-->
+                    <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                  </div>
+                  <div class="card-content">
+                    <p>I-15</p>
+                    <p class="title is-size-5">Ogden</p>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="column 4-tablet is-3-desktop">
+                    <div class="card">
+                      <div class="car-image has-text-centered px-6">
+                        <!--Will have to change to Video/ img is placeholder-->
+                        <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                      </div>
+                      <div class="card-content">
+                        <p>I-15</p>
+                        <p class="title is-size-5">Ogden</p>
+                      </div>
+            </section>
+              
+      <!--Provo Cams -->
+      <section class="section">
+        <div class="container">
+          <h4 class="title is size-3">Provo</h4>
+          <div class="columns mt-5 is-8 is-variable">
+            <div class="column 4-tablet is-3-desktop">
+              <div class="card">
+                <div class="car-image has-text-centered px-6">
+                  <!--Will have to change to Video/ img is placeholder-->
+                  <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                </div>
+                <div class="card-content">
+                  <p>I-15</p>
+                  <p class="title is-size-5">Provo</p>
+                </div>
+              </div>
+            </div>
+            <div class="column 4-tablet is-3-desktop">
+              <div class="card">
+                <div class="car-image has-text-centered px-6">
+                  <!--Will have to change to Video/ img is placeholder-->
+                  <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+                </div>
+                <div class="card-content">
+                  <p>I-15</p>
+                  <p class="title is-size-5">Provo</p>
+                </div>
+          </div>
+          </div>
+          <div class="column 4-tablet is-3-desktop">
+            <div class="card">
+              <div class="car-image has-text-centered px-6">
+                <!--Will have to change to Video/ img is placeholder-->
+                <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+              </div>
+              <div class="card-content">
+                <p>I-15</p>
+                <p class="title is-size-5">Provo</p>
+              </div>
+        </div>
+        </div>
+        <div class="column 4-tablet is-3-desktop">
+          <div class="card">
+            <div class="car-image has-text-centered px-6">
+              <!--Will have to change to Video/ img is placeholder-->
+              <img src="assets/Images/SLC.jpg" alt="Live camera footage">
+            </div>
+            <div class="card-content">
+              <p>I-15</p>
+              <p class="title is-size-5">Provo</p>
+            </div>
+          </section>
       </main>
       <script src="./assets/Javascript/UDOT.js"></script>
   </body>
