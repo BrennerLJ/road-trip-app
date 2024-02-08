@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Other API</title>
+    <title>Gas Station Prices</title>
   </head>
   
   <body>
@@ -24,9 +24,18 @@
           </div>
         </div>
       </nav>
-      
-      
-      <script src="./assets/Javascript/UDOT.js"></script>
+      <!-- The box below will show the gas prices of whatever city gets selected here. -Matt -->
+      <div class="select">
+        <select id="city-selector">
+          <option>Select city</option>
+        </select>
+      </div>
+      <!-- This is where I'm putting the displayed gas price for now. We can change this to whatever looks better. -Matt -->
+      <div class="box" id="price-display">
+        
+      </div>
+      </main>
+      <script src="./assets/Javascript/Fuel.js"></script>
   </body>
   
   </html>
