@@ -21,7 +21,7 @@ Simply open in any browser window.
 * Open the website in your browser.
 * View the "About" page by scrolling on the home page or clicking the "About" tab.
 * To see the road conditions, click on the "Traffic Conditions" tab.
-* You can click on the different cameras to see the traffic images
+* You can click on the different cameras to see the traffic images.
 * To see the gas prices, click on the "Gas Station Prices" tab.
 * You can search for the city you want and view the average gas price there.
 
