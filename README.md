@@ -32,15 +32,15 @@ If any issues arise, try reloading the website first. If the issue continues, fe
 ## Authors
 
 * Sara Sparrow
-    * [Email Sara Sparrow](<s.l.hubbard19@gmail.com>)
+    * <s.l.hubbard19@gmail.com>
 * Lorenzo Rios
-    * [Email Lorenzo Rios](<lorenzowebdevelopment6@gmail.com>)
+    * <lorenzowebdevelopment6@gmail.com>
 * Matthew Christopherson
-    * [Email Matthew Christopherson](<matthew.christopherson27@gmail.com>)
+    * <matthew.christopherson27@gmail.com>
 * Patrick Castorena
-    * [Email Patrick Castorena](<patrickc77hhs@gmail.com>)
+    * <patrickc77hhs@gmail.com>
 * Brenner Jolley
-    * [Email Brenner Jolley](<bjbrenardjoey@gmail.com>)
+    * <bjbrenardjoey@gmail.com>
 
 ## License
 
