@@ -1,5 +1,3 @@
-let citySelector = document.getElementById('city-selector');
-let priceDisplay = document.getElementById('price-display');
 // const fuelApiKey = '6356261635msh6fcf14a5eec0524p1b803bjsnfb36ba94ecf5'
 
 const searchInput = document.getElementById('city-input');
@@ -8,6 +6,7 @@ let unleadedEl = document.getElementById('unleaded-price-element');
 let midGradeEl = document.getElementById('midgrade-price-element');
 let premiumEl = document.getElementById('premium-price-element');
 let dieselEl = document.getElementById('diesel-price-element');
+let priceDisplay = document.getElementById('price-display');
 
 async function fetchData() {
     const url = 'https://gas-price.p.rapidapi.com/stateUsaPrice?state=UT';
@@ -30,17 +29,25 @@ async function fetchData() {
 }
 
 function displayData(result) {
-    for (i = 0; i < result.cities.length; i++) {
-        const city = result.cities[i];
-        const cityCard = document.createElement('div');
-        cityDiv.classList.add('city-info');
-        cityDiv.innerHTML = `
-        <h2>City: ${city.name}</h2>
-        <p>Unleaded Gas Price: ${city.gasoline}</p>
-        <p>Midgrade Gas Price: ${city.midGrade}</p>
-        <p>Premium Gas Price: ${city.premium}</p>
-        <p>Diesel Price: ${city.diesel}</p>
-    `;
-    cityEl.appendChild(cityDiv);
+    if (result && result.result && result.result.cities) {
+        const cities = result.result.cities;
+        for (let i = 0; i < cities.length; i++) {
+            const city = cities[i];
+            const cityCard = document.createElement('div');
+            cityCard.classList.add('city-info');
+            cityCard.innerHTML = `
+                <h2>City: ${city.name}</h2>
+                <p>Unleaded Gas Price: ${city.gasoline}</p>
+                <p>Midgrade Gas Price: ${city.midGrade}</p>
+                <p>Premium Gas Price: ${city.premium}</p>
+                <p>Diesel Price: ${city.diesel}</p>
+                <br>
+            `;
+            priceDisplay.appendChild(cityCard);
+        }
+    } else {
+        console.error('Invalid response format');
     }
 }
+
+fetchData();
