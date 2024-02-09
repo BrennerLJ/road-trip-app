@@ -8,24 +8,29 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     console.log(data);
-
-    for (var i = 0; i < data.length; i++) {
+var citiesArray = [2, 27, 28, 30, 134, 135, 136, 137, 138, 197, 200, 220, 348, 357, 430, 530];
+    for (var i = 0; i < citiesArray.length; i++) {
         
-        var createTableRow = document.createElement('tr');
-        var tableData = document.createElement('td');
-        var link = document.createElement('a');
+        var createTableRow = document.createElement("tr");
+        var tableData = document.createElement("td");
+        var link = document.createElement("a");
+        var citiesArrayData = data[citiesArray[i]].Url;
 
-        link.textContent = data[i].html_url;
-        link.href = data[i].html_url;
-        
+        link.textContent = data[citiesArray[i]].Url;
+        link.setAttribute("href", citiesArrayData); 
+
+        console.log(citiesArray);
         tableData.appendChild(link);
         createTableRow.appendChild(tableData);
         tableBody.appendChild(createTableRow);
   }
 });
 
-function displayUdot() {
-  document.getElementById("cameras").innerHTML = "Cameras: ${cameras}";
+function displayUdot(cameras, cam2) {
+  document.getElementById("#cameras").innerHTML = `Cameras: ${cameras}`;
+  document.getElementById("cam2").innerHTML = `Cam2: ${cam2}`;
+  document.createElement("#cameras");
+  
 }
 
 function getData() {
@@ -45,3 +50,5 @@ fetch(url)
     }).join("");
   })
   .catch(console.warn);
+
+  displayUdot()
