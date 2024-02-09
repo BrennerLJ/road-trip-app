@@ -63,3 +63,7 @@ img{
     display: inline-block;
     transition: background-color 0.6s ease;
   }
+
+  .price-card {
+    width: 15%;
+  }
