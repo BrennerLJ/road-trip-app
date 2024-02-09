@@ -34,7 +34,7 @@ function displayData(result) {
         for (let i = 0; i < cities.length; i++) {
             const city = cities[i];
             const cityCard = document.createElement('div');
-            cityCard.classList.add('city-info', 'price-card', 'box');
+            cityCard.classList.add('price-card', 'box');
             cityCard.innerHTML = `
                 <h2>City: ${city.name}</h2>
                 <p>Unleaded Gas Price: $${city.gasoline}</p>
