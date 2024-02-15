@@ -5,6 +5,11 @@ const apiUrl = 'https://www.udottraffic.utah.gov/api/v2/get/cameras';
 const requestUrl = `${apiUrl}?key=${apiKey}`;
 const url = 'https://corsproxy.io/?' + encodeURIComponent(requestUrl);
 
+<<<<<<< HEAD
+// adding refresh timer for 2 minutes and function -PC
+function fetchDataAndRefresh(){
+=======
+>>>>>>> main
 fetch(url)
   .then(response => response.json())
   .then(data => {
@@ -23,4 +28,33 @@ fetch(url)
         createTableRow.appendChild(tableData);
         
   }
-});
+})};
+
+
+function autoRefresh() {
+  fetchDataAndRefresh();
+  setInterval(fetchDataAndRefresh, 120000);
+}
+window.onload = autoRefresh;
+
+function displayUdot() {
+  document.getElementById("cameras").innerHTML = "Cameras: ${cameras}";
+}
+
+function getData() {
+  let cameras = document.getElementById("cameras");
+}
+
+fetch(url)
+  .then((response) => {
+    if (!response.ok) throw new Error("Error")
+    return response.json();
+  })
+  .then((dataArray) => {
+
+    cameras.innerHTML = dataArray
+    .map(({cameras}) => {
+      return `<div>${cameras}</div>`;
+    }).join("");
+  })
+  .catch(console.warn);
