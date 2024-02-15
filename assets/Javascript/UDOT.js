@@ -5,8 +5,11 @@ const apiUrl = 'https://www.udottraffic.utah.gov/api/v2/get/cameras';
 const requestUrl = `${apiUrl}?key=${apiKey}`;
 const url = 'https://corsproxy.io/?' + encodeURIComponent(requestUrl);
 
+<<<<<<< HEAD
 // adding refresh timer for 2 minutes and function -PC
 function fetchDataAndRefresh(){
+=======
+>>>>>>> main
 fetch(url)
   .then(response => response.json())
   .then(data => {
@@ -23,7 +26,7 @@ fetch(url)
         
         tableData.appendChild(link);
         createTableRow.appendChild(tableData);
-        tableBody.appendChild(createTableRow);
+        
   }
 })};
 
