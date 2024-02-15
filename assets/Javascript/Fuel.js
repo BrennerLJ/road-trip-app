@@ -1,4 +1,4 @@
-const fuelApiKey = '3f9b436a88mshc934daa190f6ae7p122ff0jsn6f66696c1adf'
+const fuelApiKey = '27dd9bf0b8mshda7b77b1d230cccp12c1afjsne9a7250f6ea8'
 
 const searchInput = document.getElementById('city-input');
 let cityEl = document.getElementById('city-element');
